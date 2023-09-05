@@ -1,8 +1,8 @@
 #Analyzes any text file and outputs the most frequent characters, Upper case letters, and lower case letters
-#Also gives count of how many characters total and for each individual character
+#Also gives a count of how many characters total and for each individual character
 
 
-path = './US_Constitution.txt'
+path = './Text_to_Analyze.txt'
 print('Top 10 most frequent characters:')
 with open(path, mode='r', encoding='utf-8') as file:
     count = 0
@@ -63,4 +63,4 @@ with open(path, mode='r', encoding='utf-8') as file:
         for j in lower_case.keys():
             if(lower_case[j]==i):
                 print("'" + str(j)+ "'" + " : "+str(lower_case[j]))
-    print(f'There are {count} characters in the US Constitution!')
+    print(f'There are {count} characters in the Text!')
